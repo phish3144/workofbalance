@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  img(
+    id="wob-logo"
+    src="/img/wob_logo.png"
+    alt="Ladefehler Administrator informieren!"
+  )
+  h1= 'Willkommen zum Online Training von Work of balance'
+  hr
+  div#videos
+    each vidTitle, index in videoTitles
+      h3= vidTitle
+      video(
+        class= 'js-player'
+        controls
+        preload='none'
+        src= './videos/' + vidTitle + '.mp4'
+      )
+      hr
