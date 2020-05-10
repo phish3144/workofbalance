@@ -1,5 +1,12 @@
 extends layout
 
 block content
-    form#login-form
+    form(action="login", method="post", id="login-form")
+        .form-group
+            label(for="username") Benutzername: 
+            input#username(type="text")
+        .form-group
+            label(for="password") Passwort: 
+            input#password(type="password")
+        button(type="submit") Login
     

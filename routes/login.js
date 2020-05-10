@@ -1,11 +1,12 @@
-'use strict';
+'use stricz'
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+
+/* GET Login Page */
 router.get('/', function (req, res) {
-    //
-    res.send('respond with a resource');
+    res.render('login', { title: 'Login | Work of balance'});
 });
 
 module.exports = router;
+
